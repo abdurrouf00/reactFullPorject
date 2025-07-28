@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Add Room Test Form</title>
+</head>
+<body>
+  <h2>Add New Room (Test Form)</h2>
+  <form id="roomForm" enctype="multipart/form-data" method="POST" action="/add">
+    <label>
+      Room Name: <br />
+      <input type="text" name="name" required />
+    </label>
+    <br /><br />
+    <label>
+      Room Type: <br />
+      <input type="text" name="type" required />
+    </label>
+    <br /><br />
+    <label>
+      Category: <br />
+      <input type="text" name="category" required />
+    </label>
+    <br /><br />
+    <label>
+      Price: <br />
+      <input type="number" name="price" required />
+    </label>
+    <br /><br />
+    <label>
+      Images (select multiple): <br />
+      <input type="file" name="images" multiple required />
+    </label>
+    <br /><br />
+    <label>
+      Bestseller:
+      <input type="checkbox" name="bestseller" value="true" />
+    </label>
+    <br /><br />
+    <button type="submit">Add Room</button>
+  </form>
+</body>
+</html>
